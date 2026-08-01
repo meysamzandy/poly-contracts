@@ -1,0 +1,62 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyArgumentEqualDefaultInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyAugmentAssignmentInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyClassicStyleClassInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="3.13" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyMandatoryEncodingInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyMissingOrEmptyDocstringInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyMissingTypeHintsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="26">
+            <item index="0" class="java.lang.String" itemvalue="celery" />
+            <item index="1" class="java.lang.String" itemvalue="aban_shared" />
+            <item index="2" class="java.lang.String" itemvalue="dependency-injector" />
+            <item index="3" class="java.lang.String" itemvalue="pymongo" />
+            <item index="4" class="java.lang.String" itemvalue="pydantic" />
+            <item index="5" class="java.lang.String" itemvalue="sentry-sdk" />
+            <item index="6" class="java.lang.String" itemvalue="confluent-kafka" />
+            <item index="7" class="java.lang.String" itemvalue="httpx" />
+            <item index="8" class="java.lang.String" itemvalue="pytest-sugar" />
+            <item index="9" class="java.lang.String" itemvalue="mongomock-motor" />
+            <item index="10" class="java.lang.String" itemvalue="pytest-clarity" />
+            <item index="11" class="java.lang.String" itemvalue="requests" />
+            <item index="12" class="java.lang.String" itemvalue="beanie" />
+            <item index="13" class="java.lang.String" itemvalue="pytest-asyncio" />
+            <item index="14" class="java.lang.String" itemvalue="ua-parser" />
+            <item index="15" class="java.lang.String" itemvalue="python-telegram-bot" />
+            <item index="16" class="java.lang.String" itemvalue="passlib" />
+            <item index="17" class="java.lang.String" itemvalue="bcrypt" />
+            <item index="18" class="java.lang.String" itemvalue="xxhash" />
+            <item index="19" class="java.lang.String" itemvalue="bleach" />
+            <item index="20" class="java.lang.String" itemvalue="pyotp" />
+            <item index="21" class="java.lang.String" itemvalue="Authlib" />
+            <item index="22" class="java.lang.String" itemvalue="user-agents" />
+            <item index="23" class="java.lang.String" itemvalue="qrcode" />
+            <item index="24" class="java.lang.String" itemvalue="cryptography" />
+            <item index="25" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PydanticTypeCheckerInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>

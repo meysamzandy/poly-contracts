@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package common.v1;
+
+option go_package = "github.com/example/poly-contracts/gen/go/common/v1;commonv1";
+
+
+message Metadata {
+
+  string request_id = 1;
+
+  int64 created_at = 2;
+
+}
+
+
+message Money {
+
+  string currency = 1;
+
+  string amount = 2;
+
+}
