@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package orders.v1;
+
+import "common/v1/common.proto";
+
+option go_package = "github.com/example/poly-contracts/gen/go/orders/v1;ordersv1";
+
+message Order {
+  string order_id = 1;
+  string wallet_id = 2;
+  string asset = 3;
+  common.v1.Money amount = 4;
+  string status = 5;
+}

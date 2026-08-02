@@ -26,3 +26,22 @@ This project solves that problem using:
 
 ## Structure
 
+.
+├── buf.gen.yaml
+├── buf.yaml
+├── examples
+ └── python
+      └── main.py
+├── gen
+├── LICENSE
+├── Makefile
+├── proto
+  ├── common
+  │  └── v1
+  │     └── common.proto
+  └── wallet
+│     └── v1
+│         └── wallet.proto
+├── README.md
+└── scripts
+    └── generate.sh

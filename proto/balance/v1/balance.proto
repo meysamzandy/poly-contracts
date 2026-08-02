@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package balance.v1;
+
+import "common/v1/common.proto";
+
+option go_package = "github.com/example/poly-contracts/gen/go/balance/v1;balancev1";
+
+message Balance {
+  string wallet_id = 1;
+  string asset = 2;
+  common.v1.Money amount = 3;
+}

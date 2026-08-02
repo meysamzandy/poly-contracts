@@ -8,3 +8,8 @@ lint:
 
 clean:
 	rm -rf gen/*
+
+
+test:
+	@echo "Running tests..."
+	# Placeholder for test commands

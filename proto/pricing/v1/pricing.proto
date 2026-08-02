@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package pricing.v1;
+
+option go_package = "github.com/example/poly-contracts/gen/go/pricing/v1;pricingv1";
+
+message Pricing {
+  string product_id = 1;
+  string currency = 2;
+  string amount = 3;
+}

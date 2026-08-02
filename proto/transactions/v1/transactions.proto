@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package transactions.v1;
+
+import "common/v1/common.proto";
+
+option go_package = "github.com/example/poly-contracts/gen/go/transactions/v1;transactionsv1";
+
+message Transaction {
+  string transaction_id = 1;
+  string order_id = 2;
+  string wallet_id = 3;
+  string asset = 4;
+  common.v1.Money amount = 5;
+  string status = 6;
+}
