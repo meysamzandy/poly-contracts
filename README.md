@@ -1,47 +1,40 @@
 # Poly Contracts
 
-Language independent contracts using Protocol Buffers.
+**Poly Contracts** is a language-agnostic contract definition system that uses Protocol Buffers and Buf to generate strongly-typed data transfer objects (DTOs) for multiple programming languages. It eliminates duplication, ensures consistency across services, and accelerates development by providing a single source of truth for inter-service communication.
 
-The repository provides a single source of truth for communication between microservices.
+## Table of Contents
 
-Supported languages:
+- [Why Poly Contracts?](#why-poly-contracts)
+- [Supported Languages](#supported-languages)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Generating Code](#generating-code)
+- [Examples](#examples)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- Go
-- Python
-- Java
-- PHP
+## Why Poly Contracts?
 
+Microservices often need to exchange structured data. Without a shared contract, each service must maintain its own DTOs, leading to:
 
-## Why
+- **Duplication** – identical definitions in multiple languages.
+- **Inconsistency** – mismatched fields or types across services.
+- **Slow onboarding** – new developers must learn multiple codebases.
 
-Sharing DTOs between different languages creates duplication.
+Poly Contracts solves these problems by:
 
-This project solves that problem using:
+1. **Defining contracts once** in Protocol Buffers (`.proto` files).
+2. **Generating code** for all supported languages with a single command.
+3. **Enforcing type safety** and versioning across services.
 
-- Protocol Buffers
-- Buf
-- Code Generation
+## Supported Languages
 
-
-
-## Structure
-
-.
-├── buf.gen.yaml
-├── buf.yaml
-├── examples
- └── python
-      └── main.py
-├── gen
-├── LICENSE
-├── Makefile
-├── proto
-  ├── common
-  │  └── v1
-  │     └── common.proto
-  └── wallet
-│     └── v1
-│         └── wallet.proto
-├── README.md
-└── scripts
-    └── generate.sh
+| Language | Generated Package |
+|----------|-------------------|
+| Go       | `gen/go`          |
+| Python   | `gen/python`      |
+| Java     | `gen/java`        |
+| PHP      | `gen/php`         |

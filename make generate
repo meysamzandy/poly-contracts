@@ -1,0 +1,17 @@
+
+This executes `scripts/generate.sh`, which in turn runs Buf to generate code for all supported languages into the `gen/` directory.
+
+> **Note:** The `gen/` directory is ignored by Git (`.gitignore`) because it contains generated artifacts.
+
+## Examples
+
+Each language has a minimal example that demonstrates how to:
+
+- Import the generated DTOs.
+- Serialize a message.
+- Deserialize a message.
+
+Examples can be found under `examples/<language>/`.
+
+### Python Example
+

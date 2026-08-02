@@ -9,3 +9,9 @@ plugins:
 
   - plugin: python
     out: gen/python
+
+  - plugin: php
+    out: gen/php
+
+  - plugin: java
+    out: gen/java
